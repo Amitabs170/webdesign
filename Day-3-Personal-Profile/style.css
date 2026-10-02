@@ -1,0 +1,170 @@
+body {
+    background-color: #f6f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #232323;
+}
+
+.profile-card {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border: 1.5px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4186de;
+    margin-bottom: 20px;
+    background: #e9ecef;
+}
+
+h1 {
+    font-size: 2.1em;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.1em;
+    color: #577199;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+section {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #316094;
+    border-left: 4px solid #4186de;
+    padding-left: 10px;
+}
+
+.about p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #333;
+    margin: 0;
+}
+
+.skills ul {
+    padding-left: 18px;
+    margin: 0;
+}
+.skills li {
+    font-size: 0.98em;
+    margin-bottom: 6px;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+    background: #f9fbfd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.education th, .education td {
+    border: 1px solid #c9d1d9;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 0.97em;
+}
+.education th {
+    background: #e3edfa;
+    color: #28589c;
+}
+.education td {
+    color: #193347;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 6px;
+}
+.contact-info a {
+    word-break: break-all;
+}
+
+.btn {
+    display: inline-block;
+    background: #4186de;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.23s, box-shadow 0.23s; 
+    box-shadow: 0 2px 7px rgba(65,134,222,0.08);
+    margin: 0 auto;
+}
+.btn:hover {
+    background: #245ba1;
+    box-shadow: 0 4px 16px rgba(36,91,161,0.15);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 12px 0;
+    color: #929292;
+    font-size: 0.95em;
+    padding: 4px 0;
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        max-width: 96vw;
+        padding: 12vw 2vw;
+    }
+    .profile-img {
+        width: 90px;
+        height: 90px;
+    }
+    h1 {
+        font-size: 1.35em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    section {
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+    .education th, .education td {
+        font-size: 0.92em;
+        padding: 6px 8px;
+    }
+    .btn {
+        padding: 9px 12px;
+        font-size: 0.97em;
+    }
+}
